@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <!--<link rel="stylesheet" href="../css/styles.css">-->
+    <style type="text/css">
+      .one {
+        height: 2cm;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+
+      nav {
+        flex: 1;
+        text-align: right;
+      }
+
+      nav ul {
+        display: inline-block;
+        list-style-type: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0d0d0e;
+        border-left: 1px solid #fff;
+        /*border: 2px solid #fff;*/
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a:hover {
+        /*background-color: rgba(0, 0, 0, 0.3);*/
+        color: pink;
+        transition: 0.1s;
+        font-size: 20px;
+        border-radius: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: 1px solid #fff;
+        transform: translateY(20px);
+        font-weight: 400;
+        background-color: lime;
+      }
+
+      .container {
+        width: 100%;
+        margin: auto;
+        padding-left: 25px;
+        padding-right: 25px;
+        height: 100vh;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .navbar .logo img {
+        background: transparent;
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+      }
+
+      .col-2 {
+        flex-basis: 50%;
+      }
+      .col-2 img {
+        max-width: 100%;
+        padding: 50px 0;
+        border-radius: 50%;
+        opacity: rgba(0, 0, 0, 0.1);
+      }
+
+      .col-2 h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 25px 0;
+        color: #e40f1a;
+      }
+
+      .col-2 p {
+        color: rgb(8, 8, 8);
+        font-weight: 400;
+        font-size: 30px;
+      }
+
+      .header {
+        /*background: radial-gradient(#fff, #777);*/
+        background-image: linear-gradient(
+          rgba(0, 0, 128, 0.5),
+          rgba(0, 0, 255, 0.3)
+        );
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: flex;
+        height: 100vh;
+      }
+      .nav-bar {
+        background-color: lime;
+        height: 8vh;
+        line-height: 8vh;
+        width: 100%;
+        display: flex;
+        padding-left: 10px;
+        justify-content: space-between;
+        padding-right: 50px;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 1px;
+        font-size: 20px;
+      }
+      .perfectwriters {
+        font-size: 37px;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        color: rgb(10, 10, 10);
+      }
+
+      .footer {
+        display: flex;
+        background-color: rgb(0, 255, 64);
+        height: 8vh;
+        line-height: 8vh;
+        padding-left: 40px;
+        margin-top: 1px;
+        font-size: 20px;
+
+        font-weight: 700px;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer > p {
+        color: white;
+        font-style: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <div class="perfectwriters">
+        <p>Egerton University Intergrated Information and Interactive System</p>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="egerton.png" width="125px" alt="Logo" />
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="admin/adminlogin.php">ADMINISTRATION</a></li>
+              <li><a href="guidance/guidancelogin.php">GUIDANCE</a></li>
+              <li><a href="staff/stafflogin.php">STAFF</a></li>
+              <li><a href="medical/medicallogin.php">MEDICAL</a></li>
+              <li><a href="student/studentlogin.php">STUDENT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 class="one">
+              Interact, Socialize,Share your ideas<br />"YOUR SAY MATTERS"
+            </h1>
+            <p>
+              All your comments are safe.<br />
+              Speak your heart and mind with no fear.<br />
+              Your safety is our priority. Your constructive criticism will
+              enable us soar to greater heights academically, socially and in
+              other various areas.
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            </p>
+            <br /><br /><br />
+            <h2>Welcome!</h2>
+          </div>
+          <div class="col-2">
+            <img src="images/communicate.jpg " alt=" " />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p style="color: white">
+        &copy; 2023 &nbsp; &nbsp; &nbsp; developed by Group One
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+#totals{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+    padding: 5px;
+    
+   
+}
+#totals .container{
+    background-color: rgb(181, 184, 178);
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    
+}
+#totals .container .amount{
+    color: rgb(4, 99, 28);
+}
+#backups{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#summaryhead{
+    width: 50px;
+    background-color: aqua;
+}
+.usersheader{
+    margin-top: 20px;
+    width: 100%;
+
+}
+
+.registration{
+    border: 2px solid green;
+    margin-top: 10px;
+    padding: 20px;
+}
+.registration div{
+    margin-top: 10px;
+}
+.registration div button{
+    margin-top: 10px;
+    padding: 5px;
+    color: green;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.registration div button:hover{
+    background-color: rgb(0, 255, 64);
+    color: azure;
+}
